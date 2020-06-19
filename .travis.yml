@@ -1,0 +1,15 @@
+language: python
+
+python:
+  - "3.6"
+  - "3.7"
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - pytest -s -vvv tests/integration/log.py
+
+after_script:
+  - coverage run --source=realtimelog -m pytest tests/integration/log.py
+  - coveralls
