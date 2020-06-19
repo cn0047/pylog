@@ -2,7 +2,7 @@ import json
 import requests
 
 
-REAL_TIME_LOG_BASE_URL = 'https://realtimelog.herokuapp.com:443/'
+REAL_TIME_LOG_BASE_URL = "https://realtimelog.herokuapp.com:443/"
 
 
 class Client():
@@ -24,6 +24,6 @@ class Client():
   def msg(self, data):
     requests.post(
       self.url,
-      headers={'Content-Type': 'application/json'},
+      headers={"Content-Type": "application/json"},
       data=json.dumps(data),
     )
