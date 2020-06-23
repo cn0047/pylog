@@ -17,6 +17,8 @@ Python package for [REAL-TIME log](https://realtimelog.herokuapp.com/) ([cn007b/
 from realtimelog import Client
 
 c = Client()
-c.msg({'code': 200, 'message': 'It works!'})
+# Please open provided link in browser.
 print('Open: ', c.get_url())
+# Now you can post log and see it immediately in dashboard.
+c.msg({'code': 200, 'message': 'It works!'})
 ````
