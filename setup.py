@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name='realtimelog',
-    version='1.1.0',
+    version='1.1.1',
     author='V. Kovpak',
     author_email='cn007b@gmail.com',
     description='Python package for REAL-TIME log, see: https://github.com/cn007b/log, https://realtimelog.herokuapp.com',
