@@ -6,7 +6,7 @@ from realtimelog import Client
 
 
 def test_client_with_id():
-    id = 'this_is_test_id'
+    id = 'this_is_test_id_with_some_random_hash_aksdjofiqewifjk'
     c = Client(id)
     actual = c.get_url()
     assert id in actual
